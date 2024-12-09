@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #1B3C74;
+    min-height: 90px;
+    max-height: 120px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.pfp {
+    margin: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+.option {
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-right: 10px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.option:hover,
+.checked {
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-right: 10px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 20px;
+    color: #1B3C74;
+    font-family: sans-serif;
+    transition: 0.7s ease;
+}
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.insidemain {
+    margin: 30px;
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 20px;
+    background-color: #DFEFFF;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #286E9F;
+    font-family: sans-serif;
+    color: white;
+    padding: 20px 40px;
+    font-size: 2em;
+    border: none;
+    border-radius: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    font-family: sans-serif;
+    color: #286E9F;
+    padding: 20px 40px;
+    font-size: 2em;
+    border: none;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #1B3C74;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+.icon {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    font-size: 1.5em;
+    color: rgb(62, 176, 247);
+}
