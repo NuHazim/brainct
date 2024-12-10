@@ -57,7 +57,8 @@ body {
 .insidemain {
     margin: 30px;
     padding: 20px;
-    min-height: 300px;
+    min-height: 220px;
+    height: auto;
     border-radius: 20px;
     background-color: #DFEFFF;
     font-family: sans-serif;
@@ -103,4 +104,41 @@ body {
     background-color: white;
     font-size: 1.5em;
     color: rgb(62, 176, 247);
+}
+
+#imain2 {
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.questions {
+    font-weight: bold;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+legend {
+    color: #286E9F;
+    font-weight: bold;
+}
+
+fieldset {
+    margin-top: 10px;
+    border: 2px solid #286E9F;
+}
+#uploadlogo{
+    background: none;
+    font-size: 1em;
+    color: white;
+}
+#upload:hover #uploadlogo{
+    background: none;
+    font-size: 1em;
+    color: #286E9F;
 }

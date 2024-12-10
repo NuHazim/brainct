@@ -19,15 +19,103 @@
         <img class="pfp" src="pfp.png" width="70" hieght="70">
     </div>
     <div class="main">
-        <div class="insidemain">
+        <div class="insidemain" id="imain1">
             <h1>Neurological Exam</h1>
             <h2>Please answer the following neurological questions before uploading your CT scan. These questions help
                 us gather essential information about your symptoms and condition, enabling a more accurate analysis of
                 your scan. This step ensures better insights and assists in identifying potential abnormalities
                 effectively.</h2>
-            <button class="button">Start</button>
+            <button class="button" id="start">Start</button>
         </div>
-        <div>
+        <div class="insidemain" id="imain2" style="display: none;">
+            <form id="submit">
+                <fieldset>
+                    <legend>1. Medical History</legend>
+                    
+                    <label class="questions">Have you experienced head trauma recently?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have a history of any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Stroke"> Stroke<br>
+                    <input type="checkbox" value="Transient Ischemic Attack (TIA)"> Transient Ischemic Attack (TIA)<br>
+                    <input type="checkbox" value="Brain Tumor"> Brain Tumor<br>
+                    <input type="checkbox" value="Epilepsy"> Epilepsy<br>
+                    <label>Other neurological conditions:</label>
+                    <input type="text"><br><br>
+        
+                    <label class="questions">Are you currently taking any blood-thinning medications (e.g., aspirin, warfarin)?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Symptoms</legend>
+                    
+                    <label class="questions">Have you recently experienced any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Severe or persistent headache"> Severe or persistent headache<br>
+                    <input type="checkbox" value="Sudden weakness or numbness on one side"> Sudden weakness or numbness on one side of your body<br>
+                    <input type="checkbox" value="Confusion or memory loss"> Confusion or memory loss<br>
+                    <input type="checkbox" value="Difficulty speaking"> Difficulty speaking<br>
+                    <input type="checkbox" value="Seizures or loss of consciousness"> Seizures or loss of consciousness<br>
+                    <label>Other:</label>
+                    <input type="text"><br><br>
+        
+                    <label class="questions">When did these symptoms begin? (Provide a time frame)</label><br>
+                    <input type="radio" value="Within the last hour"> Within the last hour<br>
+                    <input type="radio" value="Today"> Today<br>
+                    <input type="radio" value="A few days ago"> A few days ago<br>
+                    <input type="radio" value="Over a week ago"> Over a week ago<br>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Behavioral and Cognitive Signs</legend>
+                    
+                    <label class="questions">Have you noticed any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Changes in personality or behavior"> Changes in personality or behavior<br>
+                    <input type="checkbox" value="Unusual fatigue or lethargy"> Unusual fatigue or lethargy<br>
+                    <input type="checkbox" value="Vision or balance problems"> Vision or balance problems<br>
+                    <label>Other:</label>
+                    <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Infections or Inflammation</legend>
+                    
+                    <label class="questions">Have you recently had a fever, infection, or been diagnosed with conditions like meningitis?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have any ongoing inflammatory conditions?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                    <label>Optional:</label>
+                    <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Demographics and Lifestyle</legend>
+                    
+                    <label class="questions">What is your age?</label>
+                    <input type="number"><br><br>
+        
+                    <label class="questions">Do you smoke or consume alcohol excessively?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have a family history of neurological disorders?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                </fieldset>
+                <button type="submit" class="button" style="font-size:20px;padding:10px 20px;margin:10px;">Submit Responses</button>
+                <button  type="button" class="button" id="back1" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
+            </form>
+        </div>
+        <div class="insidemain" id="imain3" style="height:20px;display: none;">
+            <h1>Please Upload your brain CT scan here</h1>
+            <input type="file" id="uploadfile" style="display:none;">
+            <button class="button" id="upload"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+            <button  class="button" id="back2" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
+        </div>
+        <div class="insidemain" id="imain4" style="display:none;">
+            <h1>Bruh</h1>
+            <button  class="button" id="back3" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
         </div>
 
     </div>
@@ -53,6 +141,7 @@
             <p><a href="#" style="color: white; text-decoration: none;">FAQ</a></p>
         </div>
     </div>
+    <script src="scan.js"></script>
 </body>
 
 </html>
