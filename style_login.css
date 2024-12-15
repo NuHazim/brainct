@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #003B71;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #005B9F;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Login Container Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.login-image {
+    max-height: 500px;
+    margin-right: 30px;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    margin-top: 40px;
+    text-align: center;
+}
