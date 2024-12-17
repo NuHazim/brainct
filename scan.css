@@ -132,13 +132,60 @@ fieldset {
     margin-top: 10px;
     border: 2px solid #286E9F;
 }
-#uploadlogo{
+
+#uploadlogo {
     background: none;
     font-size: 1em;
     color: white;
 }
-#upload:hover #uploadlogo{
+
+#upload1:hover #uploadlogo {
     background: none;
     font-size: 1em;
     color: #286E9F;
+}
+
+#upload3:hover #uploadlogo {
+    background: none;
+    font-size: 1em;
+    color: #286E9F;
+}
+
+#upload2:hover #uploadlogo {
+    background: none;
+    font-size: 1em;
+    color: #286E9F;
+}
+
+#imain4 {
+    display: grid;
+    min-width: 1300px;
+    min-height: 500px;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+}
+
+#back3 {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    grid-column: 12/15;
+    grid-row: 10/end;
+}
+#imagebox{
+    padding:20px;
+    background-color: rgb(53, 53, 53);
+    grid-column: 1/10;
+    grid-row: 1/end;
+}
+#resultbox{
+    grid-column: 10/end;
+    grid-row: 1/6;
+}
+#similarbox{
+    grid-column: 10/end;
+    grid-row: 6/end;
+}
+figure{
+    margin:10px;
 }

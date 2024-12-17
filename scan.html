@@ -106,15 +106,49 @@
                 <button  type="button" class="button" id="back1" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
             </form>
         </div>
-        <div class="insidemain" id="imain3" style="height:20px;display: none;">
+        <div class="insidemain" id="imain3" style="display:none;">
             <h1>Please Upload your brain CT scan here</h1>
-            <input type="file" id="uploadfile" style="display:none;">
-            <button class="button" id="upload"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+            <div style="display:flex;flex-direction: row;gap:10px;">
+                <div>
+                    <h3>Axial</h3>
+                    <input type="file" id="uploadfile1" style="display:none;">
+                    <button class="button" id="upload1"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+                <div>
+                    <h3>Coronal</h3>
+                    <input type="file" id="uploadfile2" style="display:none;">
+                    <button class="button" id="upload2"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+                <div>
+                    <h3>Sagittal</h3>
+                    <input type="file" id="uploadfile3" style="display:none;">
+                    <button class="button" id="upload3"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+            </div>
+            <button class="button" id="submit2" style="font-size:20px;padding:10px 20px;margin:10px;">Submit</button>
             <button  class="button" id="back2" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
         </div> -->
-        <div class="insidemain" id="imain4">
-            <h1>Bruh</h1>
-            <button  class="button" id="back3" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
+        <div class="insidemain" id="imain4" >
+            <div style="border:2px solid black" id="imagebox">
+                <div style="display:flex;flex-direction: row;">
+                    <figure>
+                        <img class="imagetochoose" id="axial" style="cursor:pointer" width="100" height="120" src="/img/brain.jpeg">
+                        <figcaption>Axial</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="imagetochoose" id="coronal" style="cursor:pointer" width="100" height="120" src="/img/brain2.jpeg">
+                        <figcaption>Coronal</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="imagetochoose" id="sagittal" style="cursor:pointer" width="100" height="120" src="/img/brain3.jpeg">
+                        <figcaption>Sagittal</figcaption>    
+                    </figure>
+                </div>
+                <img id="imagechosen" width="400" height="420" >
+            </div>
+            <div style="border:2px solid red" id="resultbox"></div>
+            <div style="border:2px solid blue" id="similarbox"></div>
+            <button  class="button" id="back3" >Back</button>
         </div>
 
     </div>
