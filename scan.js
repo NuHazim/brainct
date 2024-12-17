@@ -1,3 +1,8 @@
+let scanimage=[
+    ["brain11.jpg","brain12.jpg","brain13.jpg",""],
+    ["brain21.jpg","brain22.jpeg","brain23.jpeg"],
+    ["brain31.jpeg","brain32.jpeg","brain33.jpeg"]
+];
 const imain1=document.getElementById("imain1");
 const imain2=document.getElementById("imain2");
 const imain3=document.getElementById("imain3");
@@ -61,10 +66,19 @@ const back3=document.getElementById("back3");
 //     imain3.style.display="none";
 //     imain4.style.display="flex";
 // });
+const axial=document.getElementById("axial");
+const coronal=document.getElementById("coronal");
+const sagittal=document.getElementById("sagittal");
+let csi=null;
 const imagestochoose=document.querySelectorAll(".imagetochoose");
         const imagechosen=document.getElementById("imagechosen");
         imagestochoose.forEach(function(imagetochoose){
             imagetochoose.addEventListener("click",function(){
                 imagechosen.src=imagetochoose.src;
+                if(csi){
+                    csi.style.border="2px solid transparent";
+                }
+                imagetochoose.style.border="2px solid orange";
+                csi=imagetochoose;
             })
         })

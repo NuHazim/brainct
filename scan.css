@@ -184,7 +184,7 @@ fieldset {
 }
 #similarbox{
     grid-column: 10/end;
-    grid-row: 6/end;
+    grid-row: 6/10;
 }
 figure{
     margin:10px;
