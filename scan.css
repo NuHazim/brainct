@@ -172,6 +172,13 @@ fieldset {
     grid-column: 12/15;
     grid-row: 10/end;
 }
+#done{
+    grid-column: 15/17;
+    font-size: 20px;
+    grid-row: 10/end;
+    margin:10px;
+    padding:10px 20px;
+}
 #imagebox{
     padding:20px;
     background-color: rgb(53, 53, 53);
@@ -186,6 +193,37 @@ fieldset {
     grid-column: 10/end;
     grid-row: 6/10;
 }
+.public{
+    grid-column: 17/19;
+    grid-row: 10/end;
+}
+.private{
+    grid-column:20/22;
+    grid-row: 10/end;
+}
+.public,.private{
+    font-size: 1.3em;
+}
 figure{
     margin:10px;
+}
+.similarimage{
+    padding:20px 30px;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+#close{
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+#dialogimage{
+    margin:20px;
+}
+#resultbox{
+    margin-left:40px;
+    text-align: left;
 }
