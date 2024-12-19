@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan</title>
+    <link rel="stylesheet" href="scan.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="option">Home</a>
+        <a href="#" class="option">About us</a>
+        <a href="scanDoctor.html" class="checked">Scan</a>
+        <a href="#" class="option">Past Scans</a>
+        <a href="doctors.html" class="option">Doctors</a>
+        <img class="pfp" src="pfp.png" width="70" height="70">
+    </div>
+    <div class="main">
+        <div class="insidemain" id="imain1">
+            <h1>Neurological Exam</h1>
+            <h2>Please answer the following neurological questions before uploading your CT scan. These questions help
+                us gather essential information about your symptoms and condition, enabling a more accurate analysis of
+                your scan. This step ensures better insights and assists in identifying potential abnormalities
+                effectively.</h2>
+            <button class="button" id="start">Start</button>
+        </div>
+        <div class="insidemain" id="imain2" style="display: none;">
+            <form id="submit">
+                <fieldset>
+                    <legend>1. Medical History</legend>
+                    
+                    <label class="questions">Have you experienced head trauma recently?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have a history of any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Stroke"> Stroke<br>
+                    <input type="checkbox" value="Transient Ischemic Attack (TIA)"> Transient Ischemic Attack (TIA)<br>
+                    <input type="checkbox" value="Brain Tumor"> Brain Tumor<br>
+                    <input type="checkbox" value="Epilepsy"> Epilepsy<br>
+                    <label>Other neurological conditions:</label>
+                    <input type="text"><br><br>
+        
+                    <label class="questions">Are you currently taking any blood-thinning medications (e.g., aspirin, warfarin)?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Symptoms</legend>
+                    
+                    <label class="questions">Have you recently experienced any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Severe or persistent headache"> Severe or persistent headache<br>
+                    <input type="checkbox" value="Sudden weakness or numbness on one side"> Sudden weakness or numbness on one side of your body<br>
+                    <input type="checkbox" value="Confusion or memory loss"> Confusion or memory loss<br>
+                    <input type="checkbox" value="Difficulty speaking"> Difficulty speaking<br>
+                    <input type="checkbox" value="Seizures or loss of consciousness"> Seizures or loss of consciousness<br>
+                    <label>Other:</label>
+                    <input type="text"><br><br>
+        
+                    <label class="questions">When did these symptoms begin? (Provide a time frame)</label><br>
+                    <input type="radio" value="Within the last hour"> Within the last hour<br>
+                    <input type="radio" value="Today"> Today<br>
+                    <input type="radio" value="A few days ago"> A few days ago<br>
+                    <input type="radio" value="Over a week ago"> Over a week ago<br>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Behavioral and Cognitive Signs</legend>
+                    
+                    <label class="questions">Have you noticed any of the following? (Select all that apply)</label><br>
+                    <input type="checkbox" value="Changes in personality or behavior"> Changes in personality or behavior<br>
+                    <input type="checkbox" value="Unusual fatigue or lethargy"> Unusual fatigue or lethargy<br>
+                    <input type="checkbox" value="Vision or balance problems"> Vision or balance problems<br>
+                    <label>Other:</label>
+                    <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Infections or Inflammation</legend>
+                    
+                    <label class="questions">Have you recently had a fever, infection, or been diagnosed with conditions like meningitis?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have any ongoing inflammatory conditions?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                    <label>Optional:</label>
+                    <input type="text"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Demographics and Lifestyle</legend>
+                    
+                    <label class="questions">What is your age?</label>
+                    <input type="number"><br><br>
+        
+                    <label class="questions">Do you smoke or consume alcohol excessively?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br><br>
+        
+                    <label class="questions">Do you have a family history of neurological disorders?</label><br>
+                    <input type="radio" value="Yes"> Yes<br>
+                    <input type="radio" value="No"> No<br>
+                </fieldset>
+                <button type="submit" class="button" style="font-size:20px;padding:10px 20px;margin:10px;">Submit Responses</button>
+                <button  type="button" class="button" id="back1" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
+            </form>
+        </div>
+        <div class="insidemain" id="imain3" style="display:none;">
+            <h1>Please Upload your brain CT scan here</h1>
+            <div style="display:flex;flex-direction: row;gap:10px;">
+                <div>
+                    <h3>Axial</h3>
+                    <input type="file" id="uploadfile1" style="display:none;">
+                    <button class="button" id="upload1"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+                <div>
+                    <h3>Coronal</h3>
+                    <input type="file" id="uploadfile2" style="display:none;">
+                    <button class="button" id="upload2"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+                <div>
+                    <h3>Sagittal</h3>
+                    <input type="file" id="uploadfile3" style="display:none;">
+                    <button class="button" id="upload3"><i class="fas fa-upload icon" id="uploadlogo" ></i> Upload</button>
+                </div>
+            </div>
+            <button class="button" id="submit2" style="font-size:20px;padding:10px 20px;margin:10px;">Submit</button>
+            <button  class="button" id="back2" style="font-size:20px;padding:10px 20px;margin:10px;">Back</button>
+        </div>
+        <div class="insidemain" id="imain4" style="display: none;">
+            <div style="border:2px solid black" id="imagebox">
+                <div style="display:flex;flex-direction: row;">
+                    <figure>
+                        <img class="imagetochoose" id="axial" style="cursor:pointer" width="100" height="120" src="/img/brain.jpeg">
+                        <figcaption>Axial</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="imagetochoose" id="coronal" style="cursor:pointer" width="100" height="120" src="/img/brain2.jpeg">
+                        <figcaption>Coronal</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="imagetochoose" id="sagittal" style="cursor:pointer" width="100" height="120" src="/img/brain3.jpeg">
+                        <figcaption>Sagittal</figcaption>    
+                    </figure>
+                </div>
+                <img id="imagechosen" width="400" height="420" >
+            </div>
+            <div id="resultbox"></div>
+            <div id="similarbox">
+                <h2>Similar Images:</h2>
+                <img class="similarimage" id="similarimage1" src="/img/brain11.jpg" width="100" height="120">
+                <img class="similarimage" id="similarimage2" src="/img/brain11.jpg" width="100" height="120">
+                <img class="similarimage" id="similarimage3" src="/img/brain11.jpg" width="100" height="120">
+            </div>
+            <button  class="button" id="back3" >Back</button>
+            <button  class="button" id="done" >Done</button>
+            <div class="public">
+                <input type="radio" name="option"><label>Public</label>
+            </div>
+            <div class="private">
+                <input type="radio" name="option"><label>Private</label>
+            </div>
+            <p class="telluswhy" id="telluswhy">Inaccurate? <span class="intelluswhy" style="color:blueviolet">Tell us why</span></p>
+        </div>
+        <dialog id="dialog">
+            <img id="dialogimage" width="400" height="420">
+            <div id="dialogresult"></div>
+            <button id="close">X</button>
+        </dialog>
+        <dialog id="dialog2">
+            <h3>Report:</h3>
+            <textarea rows="10" cols="50" id="textareainput" placeholder="Enter text here..." ></textarea>
+            <button class="button" id="close3" style="font-size:20px;padding:10px 20px;margin:10px;">Submit</button>
+            <button id="close2">X</button>
+        </dialog>
+        <div class="popup" id="popup">
+            <p><strong>Report Submitted</strong></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <div style="color:white;">
+                <h4>Contact Us:</h4>
+                <p>
+                    <i class="fa fa-phone"></i> +60 12345678<br>
+                    <i class="fa fa-envelope"></i> ctbrain@um.my
+                </p>
+                <h4>Follow Us:</h4>
+            </div>
+            <p>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-pinterest"></i></a>
+            </p>
+        </div>
+        <div style="text-align: right;">
+            <p><a href="#" style="color: white; text-decoration: none;">About Us</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">FAQ</a></p>
+        </div>
+    </div>
+    <script src="scan.js"></script>
+</body>
+
+</html>

@@ -25,6 +25,7 @@ const back1=document.getElementById("back1");
 const back2=document.getElementById("back2");
 const back3=document.getElementById("back3");
 const done=document.getElementById("done");
+
 done.addEventListener("click",function(){
     imain1.style.display="flex";
     imain2.style.display="none";
@@ -71,6 +72,7 @@ uploadbutton2.addEventListener("click",function(){
 uploadbutton3.addEventListener("click",function(){
     uploadfile3.click();
 });
+
 const axial=document.getElementById("axial");
 const coronal=document.getElementById("coronal");
 const sagittal=document.getElementById("sagittal");
@@ -80,6 +82,7 @@ const similarimage2=document.getElementById("similarimage2");
 const similarimage3=document.getElementById("similarimage3");
 const dialogresult=document.getElementById("dialogresult");
 let randomNumber;
+
 submit2.addEventListener("click",function(){
     imain1.style.display="none";
     imain2.style.display="none";
@@ -124,5 +127,26 @@ similarimages.forEach(function(similarimage){
 closebutton.addEventListener("click",function(){
     dialog.style.display="none";
     dialog.close();
+})
+const telluswhy=document.getElementById("telluswhy");
+const dialog2=document.getElementById("dialog2");
+const close2=document.getElementById("close2");
+const close3=document.getElementById("close3");
+const textareainput=document.getElementById("textareainput");
+const popup=document.getElementById("popup");
+telluswhy.addEventListener("click",function(){
+    dialog2.showModal();
+})
+close2.addEventListener("click",function(){
+    dialog2.close();
+    textareainput.value="";
+})
+close3.addEventListener("click",function(){
+    dialog2.close();
+    textareainput.value="";
+    popup.style.bottom="10px";
+    setTimeout(function(){
+        popup.style.bottom="-200px";
+    },3000)
 })
 

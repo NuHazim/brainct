@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="doctors.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="option">Home</a>
+        <a href="#" class="option">About us</a>
+        <a href="scanPatient.html" class="option">Scan</a>
+        <a href="#" class="option">Past Scans</a>
+        <a href="doctors.html" class="checked">Doctors</a>
+        <img class="pfp" src="pfp.png" width="70" height="70">
+    </div>
+    <div class="main">
+        <div class="bar">
+            <details class="filterleft">
+                <summary>Filter</summary>
+                <p>Hospital</p>
+                <input type="checkbox"><label>Hospital 1</label><br>
+                <input type="checkbox"><label>Hospital 2</label><br>
+                <input type="checkbox"><label>Hospital 3</label><br>
+                <input type="checkbox"><label>Hospital 4</label><br>
+                <input type="checkbox"><label>Hospital 5</label>
+    
+                <p>Gender</p>
+                <input type="radio" name="option"><label>Male</label><br>
+                <input type="radio" name="option"><label>Female</label><br>
+                <button>Apply</button>
+            </details>
+            <input type="search" placeholder="Enter doctor here...">
+            <details class="filterright">
+                <summary>Sort</summary>
+                <input type="radio" name="option2"><label>Hospital</label><br>
+                <input type="radio" name="option2"><label>A-z</label><br>
+                <button>Apply</button>
+            </details>
+        </div>
+        <div class="doctorsbox">
+            <div class="doctor">
+                <img width="200" height="220" src="/img/doctor1.png">
+                <p class="thedoctor">Dr. Akash Kansagra</p>
+                <p class="where">San Jose, California</p>
+            </div>
+            <div class="doctor">
+                <img width="200" height="220" src="/img/doctor2.jpg">
+                <p class="thedoctor">Dr. James Ambrose</p>
+                <p class="where">Pioneer in clinical CT use</p>
+            </div>
+            <div class="doctor">
+                <img width="200" height="220" src="/img/doctor3.jpg">
+                <p class="thedoctor">Dr. Ian Donald</p>
+                <p class="where">Developer of medical ultrasound</p>
+            </div>
+            <div class="doctor">
+                <img width="200" height="220" src="/img/doctor4.webp">
+                <p class="thedoctor">Dr. Charles T. Dotter</p>
+                <p class="where">Father of interventional radiology</p>
+            </div>
+            <div  class="doctor">
+                <img width="200" height="220"src="/img/doctor5.jpg">
+                <p class="thedoctor">Dr. Felix Fleischner</p>
+                <p class="where">Chest radiology specialist</p>
+            </div>
+            <div  class="doctor">
+                <img width="200" height="220" src="/img/doctor6.jpeg">
+                <p class="thedoctor">Dr. Juan M. Taveras</p>
+                <p class="where">American Society of Neuroradiology Co-founder</p>
+            </div>
+            <div  class="doctor">
+                <img width="200" height="220" src="/img/doctor7.png">
+                <p class="thedoctor">Dr. Arya Vinu</p>
+                <p class="where">Burjeel Hospital Radiologist</p>
+            </div>
+            <div  class="doctor">
+                <img width="200" height="220" src="/img/doctor8.jpg">
+                <p class="thedoctor">Burton P. Drayer</p>
+                <p class="where">Icahn School of Medicine at Mount Sinai</p>
+            </div>
+        </div>
+        <dialog id="dialog" style="display:none;">
+            <img id="dialogimage" width="500" height="520" >
+            <div style="margin:20px;">
+                <h1 id="dialogdoctor"></h1>
+                <h1 id="dialogwhere"></h1>
+                <button class="button">Book</button>
+                <button class="button">Chat</button>
+            </div>
+            <button id="close">X</button>
+        </dialog>
+        <div class="navbottom">
+            <button>◀</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <h1> . . . </h1>
+            <button>10</button>
+            <button>▶</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <div style="color:white;">
+                <h4>Contact Us:</h4>
+                <p>
+                    <i class="fa fa-phone"></i> +60 12345678<br>
+                    <i class="fa fa-envelope"></i> ctbrain@um.my
+                </p>
+                <h4>Follow Us:</h4>
+            </div>
+            <p>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-pinterest"></i></a>
+            </p>
+        </div>
+        <div style="text-align: right;">
+            <p><a href="#" style="color: white; text-decoration: none;">About Us</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">FAQ</a></p>
+        </div>
+    </div>
+    <script src="doctors.js"></script>
+</body>
+</html>

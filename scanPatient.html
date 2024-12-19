@@ -13,7 +13,7 @@
     <div class="navbar">
         <a href="#" class="option">Home</a>
         <a href="#" class="option">About us</a>
-        <a href="#" class="checked">Scan</a>
+        <a href="scanPatient.html" class="checked">Scan</a>
         <a href="#" class="option">Past Scans</a>
         <img class="pfp" src="pfp.png" width="70" height="70">
     </div>
@@ -161,13 +161,22 @@
             <div class="private">
                 <input type="radio" name="option"><label>Private</label>
             </div>
-
+            <p class="telluswhy" id="telluswhy">Inaccurate? <span class="intelluswhy" style="color:blueviolet">Tell us why</span></p>
         </div>
         <dialog id="dialog">
             <img id="dialogimage" width="400" height="420">
             <div id="dialogresult"></div>
             <button id="close">X</button>
         </dialog>
+        <dialog id="dialog2">
+            <h3>Report:</h3>
+            <textarea rows="10" cols="50" id="textareainput" placeholder="Enter text here..." ></textarea>
+            <button class="button" id="close3" style="font-size:20px;padding:10px 20px;margin:10px;">Submit</button>
+            <button id="close2">X</button>
+        </dialog>
+        <div class="popup" id="popup">
+            <p><strong>Report Submitted</strong></p>
+        </div>
     </div>
     <div class="footer">
         <div>
