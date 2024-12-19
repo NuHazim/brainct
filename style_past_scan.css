@@ -18,7 +18,12 @@ h2 {
     justify-content: center;
     padding: 10px 0;
 }
-
+.loginbutton{
+    padding:10px 30px;
+    color:#286E9F;
+    border-radius: 10px;
+    border: 2px solid white;
+}
 .navbar a {
     color: white;
     text-decoration: none;

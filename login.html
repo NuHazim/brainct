@@ -13,26 +13,26 @@
 <div class="wrapper">
     <div class="navbar">
         <div>
-            <a href="home.html">Home</a>
+            <a href="#">Home</a>
         </div>
         <div>
-            <a href="home.html">Scan</a>
+            <a href="#">Scan</a>
         </div>
         <div>
-            <a href="past_scan.html">Past Scans</a>
+            <a href="#">Past Scans</a>
         </div>
         <div>
-            <a href="home.html">Doctors</a>
+            <a href="#">Doctors</a>
         </div>
         <div>
-            <a href="about_us.html">About Us</a>
+            <a href="#">About Us</a>
         </div>
         <div>
             <a href="login.html">Login</a>
             <a href="login.html">Register</a>
         </div>
         <div>
-            <a href="profile.html" class="profile-icon" title="Profile">
+            <a href="#" class="profile-icon" title="Profile">
                 <i class="fas fa-user-circle fa-2x"></i>
             </a>
         </div>
@@ -64,8 +64,8 @@
                     <div class="mb-3">
                         <label for="UserType" class="form-label">User Type:</label>
                         <select class="form-control" id="UserType" name="UserType" required>
-                            <option value="Client">Client</option>
-                            <option value="Doctor">Doctor</option>
+                            <option value="homePatient.html">Client</option>
+                            <option value="homeDoctor.html">Doctor</option>
                         </select>
                     </div>
                     <button type="button" id="loginButton" class="btn btn-primary w-100 mb-2">Login</button>
@@ -109,7 +109,8 @@
         // Vérifie si tous les champs sont valides
         if (form.checkValidity()) {
             // Si valide, redirige vers home.html
-            window.location.href = "home.html";
+            const UserType = document.getElementById("UserType").value;
+            window.location.href = UserType;
         } else {
             // Affiche un message d'erreur si un ou plusieurs champs ne sont pas remplis
             errorMessage.textContent = "Veuillez remplir tous les champs correctement.";

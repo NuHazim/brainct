@@ -17,7 +17,12 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+.loginbutton{
+    padding:10px 30px;
+    color:#286E9F;
+    border-radius: 10px;
+    border: 2px solid white;
+}
 .profile-header {
     display: flex;
     align-items: center;

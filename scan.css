@@ -226,6 +226,14 @@ figure{
     right:10px;
     cursor: pointer;
 }
+.loginbutton{
+    padding:10px 30px;
+    color:#286E9F;
+    border-radius: 10px;
+    border: 2px solid white;
+    color:white;
+    text-decoration: none;
+}
 #dialogimage{
     margin:20px;
 }
