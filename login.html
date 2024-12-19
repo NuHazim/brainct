@@ -125,7 +125,8 @@
         // Vérifie si tous les champs sont valides
         if (form.checkValidity()) {
             // Si valide, redirige vers home.html (ou vers une autre page)
-            window.location.href = "home.html";
+            const UserType = document.getElementById("UserType").value;
+            window.location.href = UserType;
         } else {
             // Affiche un message d'erreur
             errorMessage.textContent = "Veuillez remplir tous les champs correctement.";
